@@ -10,19 +10,19 @@ A universe created using λ-calculus and javascript 😍 . We will create all th
 * Data Structures:
     * <details>
         <summary>Pair</summary>
-        - [x] pair()
-        - [x] fst()
-        - [x] snd()
-        - [ ] phi()
+        * [x] pair()
+        * [x] fst()
+        * [x] snd()
+        * [ ] phi()
         </details>
     * <details>
         <summary>List</summary>
-        - [ ] list()
-        - [ ] head()
-        - [ ] tail()
-        - [ ] map()
-        - [ ] filter()
-        - [ ] reduce()
+        * [ ] list()
+        * [ ] head()
+        * [ ] tail()
+        * [ ] map()
+        * [ ] filter()
+        * [ ] reduce()
         </details>
     * <details>
         <summary>Stack</summary>
