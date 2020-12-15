@@ -8,11 +8,12 @@ A universe created using λ-calculus and javascript 😍 . We will create all th
 * Characters
 * String
 * Data Structures:
-    * **Pair**
+    * <details>**Pair**<br/>
         * *pair()*
         * *fst()*
         * *snd()*
         * *phi()*
+        </details>
     * **List**
         * *list()*
         * *head()*
@@ -23,5 +24,10 @@ A universe created using λ-calculus and javascript 😍 . We will create all th
     * **Stack**
     * **Queue**
 * Core Module
-
+- [ ] checkbox
+- [x] checkbox
+- [] checkbox
+- [] checkbox
+- ⬜️ checkbox
+- ✅ checkbox
 # Motivation
