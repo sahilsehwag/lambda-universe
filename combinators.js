@@ -65,4 +65,21 @@ export const B = f => g => a => f(g(a))
 // substitution-combinator
 // starling-combinator
 // const S = a => b => c => a(c)(b(c))
-const S = f => g => a => f(a)(g(a))
+export const S = f => g => a => f(a)(g(a))
+
+//==================== RANDOM ====================//
+
+// composition-combinator(1° <- 2°)
+// blackbird-combinator
+// export const B1 = f => a => b => c => a(b(c)(d))
+export const B1 = f => g => a => b => f(g(a)(b))
+
+// composition-combinator(1° <- 3°)
+// bunting-combinator
+// export const B2 = a => b => c => d => e => a(b(c)(d)(e))
+export const B2 = f => g => a => b => c => f(g(a)(b)(c))
+
+// composition-combinator(1° <- 1° <- 1°)
+// becard-combinator
+// export const B3 = a => b => c => d => a(b(c(d)))
+export const B3 = f => g => h => a => f(g(h(a)))
