@@ -4,33 +4,33 @@
 // 					REFERENCE(λ)
 // ==================================================
 //
-// I   = λa.a					(idiot|ibis-combinator)
-// B   = λa.aa  				(mockingbird-combinator)
-// Y   = λa.aa  				(y-combinator)
-// Z   = λa.aa  				(z-combinator)
-// K   = λab.a  				(kestrel-combinator)
-// KI  = λab.b  				(kite-combinator)
-// I*  = λab.ab 	 			(identity-once-removed-combinator)
+// I   = λa.a					(idiot|ibis-combinator) [identity-combinator]
+// B   = λa.aa  				(mockingbird-combinator) [self-application-combinator]
+// Y   = λa.aa  				(y-combinator) [recursion-combinator]
+// Z   = λa.aa  				(z-combinator) [recursion-combinator]
+// K   = λab.a  				(kestrel-combinator) [first-combinator][constant-combinator]
+// KI  = λab.b  				(kite-combinator) [second-combinator]
+// I*  = λab.ab 	 			(identity-once-removed-combinator) [application-combinator]
 // T   = λab.ba 	 			(thrush-combinator)
 // I** = λabc.abc  				(identity-twice-removed-combinator)
-// C   = λabc.acb  				(cardinal-combinator)
-// V   = λabc.cab  				(vireo-combinator)
+// C   = λabc.acb  				(cardinal-combinator) [flip-combinator]
+// V   = λabc.cab  				(vireo-combinator) [pair-combinator]
 // F   = λabc.cba  				(inch-combinator)
 // R   = λabc.bca  				(robin-combinator)
 // _   = λabc.bac  				(-combinator)
-// B   = λabc.a(bc)				(bluebird-combinator)
-// Q   = λabc.b(ac)				(queer-combinator)
+// B   = λabc.a(bc)				(bluebird-combinator) [composition-combinator]
+// Q   = λabc.b(ac)				(queer-combinator) [pipe-combinator]
 // Q1  = λabc.a(cb)				(quixotic-combinator)
 // Q2  = λabc.b(ca)				(quizzical-combinator)
 // Q3  = λabc.c(ab)				(quirky-combinator)
 // Q4  = λabc.c(ba)				(quacky-combinator)
-// S   = λabc.ac(bc)			(starling-combinator)
+// S   = λabc.ac(bc)			(starling-combinator) [substitution-combinator]
 // 
 // L   = λab.a(bb)				(lark-combinator)
 // M2  = λab.ab(ab)				(double-mockingbird-combinator)
 // O   = λab.b(ab) 				(owl-combinator)
 // U   = λab.b(aab)				(turing-combinator)
-// W   = λab.abb  				(warbler-combinator)
+// W   = λab.abb  				(warbler-combinator) [duplication-combinator]
 // CW  = λab.baa  				(converse-warbler-combinator)
 // KM  = λab.bb  				(konstant-mocker-combinator)
 // CKM = λab.aa  				(crossed-konstant-mocker-combinator)
