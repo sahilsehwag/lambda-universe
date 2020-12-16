@@ -6,7 +6,7 @@
 //
 // I   = λa.a					(idiot|ibis-combinator) [identity-combinator]
 // B   = λa.aa  				(mockingbird-combinator) [self-application-combinator]
-// Y   = λa.aa  				(y-combinator) [recursion-combinator]
+// Y   = λa.aa  				(fix-point-combinator) [recursion-combinator]
 // Z   = λa.aa  				(z-combinator) [recursion-combinator]
 // K   = λab.a  				(kestrel-combinator) [first-combinator][constant-combinator]
 // KI  = λab.b  				(kite-combinator) [second-combinator]
@@ -60,6 +60,57 @@
 // 					REFERENCE(JS)
 // ==================================================
 // 
+// I   = a => a
+// M   = a => a(a)
+// Y   = a => //TODO
+// Z   = a => //TODO
+// K   = a => b => a
+// KI  = a => b => b
+// I*  = a => b => a(b)
+// T   = a => b => b(a)
+// I** = a => b => c => a(b)(c)
+// C   = a => b => c => a(c)(b)
+// V   = a => b => c => c(a)(b)
+// F   = a => b => c => c(b)(a)
+// _   = a => b => c => b(a)(c)
+// R   = a => b => c => b(c)(a)
+// B   = a => b => c => a(b(c))
+// Q   = a => b => c => b(a(c))
+// Q1  = a => b => c => a(c(b))
+// Q2  = a => b => c => b(c(a))
+// Q3  = a => b => c => c(a(b))
+// Q4  = a => b => c => c(b(a))
+// S   = a => b => c => a(c)(b(c)
+//
+// L   = a => b => a(b(b))
+// M2  = a => b => a(b)(a(b))
+// O   = a => b => b(a(b))
+// U   = a => b => b(a(a)(b))
+// W   = a => b => a(b)(b)
+// CW  = a => b => b(a)(a)
+// KM  = a => b => b(b)
+// CKM = a => b => a(a)
+// H   = a => b => c => a(b)(c)(b)
+// W*  = a => b => c => a(b)(c)(c)
+// B1  = a => b => c => d => a(b(c)(d))
+// B3  = a => b => c => d => a(b(c(d)))
+// D   = a => b => c => d => a(b)(c(d))
+// G   = a => b => c => d => a(d)(b(c))
+// J   = a => b => c => d => a(b)(a(d)(c))
+// C*  = a => b => c => d => a(b)(d)(c)
+// R*  = a => b => c => d => a(c)(d)(b)
+// F*  = a => b => c => d => a(d)(c)(b)
+// V*  = a => b => c => d => a(c)(b)(d)
+// W** = a => b => c => d => a(b)(c)(d)(d)
+// B2  = a => b => c => d => e => a(b(c)(d)(e))
+// D1  = a => b => c => d => e => a(b)(c)(d(e))
+// D2  = a => b => c => d => e => a(b(c))(d(e))
+// E   = a => b => c => d => e => a(b)(c(d)(e))
+// C** = a => b => c => d => e => a(b)(c)(e)(d)
+// R** = a => b => c => d => e => a(b)(d)(e)(c)
+// F** = a => b => c => d => e => a(b)(e)(d)(c)
+// V** = a => b => c => d => e => a(b)(e)(c)(d)
+// BE  = a => b => c => d => e => f => g => a(b(c)(d))(e(f)(g))
 
 
 //==================== 1-ARGUMENTS ====================//
