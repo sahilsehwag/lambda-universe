@@ -1,4 +1,67 @@
 
+
+// ==================================================
+// 					REFERENCE(λ)
+// ==================================================
+//
+// I   = λa.a					(idiot|ibis-combinator)
+// B   = λa.aa  				(mockingbird-combinator)
+// Y   = λa.aa  				(y-combinator)
+// Z   = λa.aa  				(z-combinator)
+// K   = λab.a  				(kestrel-combinator)
+// KI  = λab.b  				(kite-combinator)
+// I*  = λab.ab 	 			(identity-once-removed-combinator)
+// T   = λab.ba 	 			(thrush-combinator)
+// I** = λabc.abc  				(identity-twice-removed-combinator)
+// C   = λabc.acb  				(cardinal-combinator)
+// V   = λabc.cab  				(vireo-combinator)
+// F   = λabc.cba  				(inch-combinator)
+// R   = λabc.bca  				(robin-combinator)
+// _   = λabc.bac  				(-combinator)
+// B   = λabc.a(bc)				(bluebird-combinator)
+// Q   = λabc.b(ac)				(queer-combinator)
+// Q1  = λabc.a(cb)				(quixotic-combinator)
+// Q2  = λabc.b(ca)				(quizzical-combinator)
+// Q3  = λabc.c(ab)				(quirky-combinator)
+// Q4  = λabc.c(ba)				(quacky-combinator)
+// S   = λabc.ac(bc)			(starling-combinator)
+// 
+// L   = λab.a(bb)				(lark-combinator)
+// M2  = λab.ab(ab)				(double-mockingbird-combinator)
+// O   = λab.b(ab) 				(owl-combinator)
+// U   = λab.b(aab)				(turing-combinator)
+// W   = λab.abb  				(warbler-combinator)
+// CW  = λab.baa  				(converse-warbler-combinator)
+// KM  = λab.bb  				(konstant-mocker-combinator)
+// CKM = λab.aa  				(crossed-konstant-mocker-combinator)
+// H   = λabc.abcb				(hummingbird-combinator)
+// W*  = λabc.abcc				(warbler-once-removed-combinator)
+// B1  = λabcd.a(bcd)			(blackbird-combinator)
+// B3  = λabcd.a(b(cd))			(becard-combinator)	
+// D   = λabcd.ab(cd			(dove-combinator)
+// G   = λabcd.ad(bc			(goldfinch-combinator)
+// J   = λabcd.ab(adc			(jay-combinator)
+// C*  = λabcd.abdc				(cardinal-once-removed-combinator)
+// R*  = λabcd.acdb				(robin-once-removed-combinator)
+// F*  = λabcd.adcb				(finch-once-removed-combinator)
+// V*  = λabcd.acbd				(vireo-once-removed-combinator)
+// W** = λabcd.abcdd			(warbler-once-removed-combinator)
+// B2  = λabcde.a(bcde)			(bunting-combinator)
+// D1  = λabcde.abc(de)			(dickcissel-combinator)
+// D2  = λabcde.a(bc)(de)		(dovekies-combinator)
+// E   = λabcde.ab(cde)			(eagle-combinator)
+// C** = λabcde.abced			(cardinal-twice-removed-combinator)
+// R** = λabcde.abdec			(robin-twice-removed-combinator)
+// F** = λabcde.abedc			(finch-twice-removed-combinator)
+// V** = λabcde.abecd			(vireo-twice-removed-combinator)
+// BE  = λabcdefg.a(bcd)(efg) 	(bald-eagle-combinator)
+//
+// ==================================================
+// 					REFERENCE(JS)
+// ==================================================
+// 
+
+
 //==================== 1-ARGUMENTS ====================//
 
 // identity-combinator
