@@ -15,7 +15,7 @@
 // I** = λabc.abc  				(identity-twice-removed-combinator)
 // C   = λabc.acb  				(cardinal-combinator) [flip-combinator]
 // V   = λabc.cab  				(vireo-combinator) [pair-combinator]
-// F   = λabc.cba  				(inch-combinator)
+// F   = λabc.cba  				(finch-combinator)
 // R   = λabc.bca  				(robin-combinator)
 // _   = λabc.bac  				(-combinator)
 // B   = λabc.a(bc)				(bluebird-combinator) [composition-combinator]
