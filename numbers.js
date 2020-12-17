@@ -1,5 +1,5 @@
 import { B, K, B1 } from './combinators'
-import { pair, fst } from './pairs'
+import { pair, fst, phi } from './pairs'
 import { not, and } from './booleans'
 
 //numbers(church-numerals)
