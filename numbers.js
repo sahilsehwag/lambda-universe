@@ -1,5 +1,6 @@
 import { B, K, B1 } from './combinators'
 import { pair, fst } from './pairs'
+import { not, and } from './booleans'
 
 //numbers(church-numerals)
 export const n0 = f => a => a
@@ -21,19 +22,24 @@ export const n10 = succ(n9)
 
 
 //arithematic-operations
-export const add = n => m => n(succ)(m)
-export const mul = n => m => n(add(m))(n0)
-export const exp = n => m => m(mul(n))(n1)
+export const add = y => x => y(succ)(x)
+export const mul = y => x => y(add(x))(n0)
+export const exp = y => x => y(mul(x))(n1)
 
-export const sub = n => m => m(pred)(n)
+export const sub = y => x => y(pred)(x)
 // export const div = n => m => //TODO
 // export const log = n => m => //TODO
 
 
 //arithematic-boolean-operations
-export const eq = n => m => is0(sub(n)(m))
+const isNot0 = B(not)(is0)
+
+const _eq = B1(is0)(sub)
+export const eq = x => y => and(_eq(x)(y))(_eq(y)(x))
+
+export const lt = B1(isNot0)(C(sub))
+export const gt = B1(isNot0)(sub)
+
 export const neq = B1(not)(eq)
-// export const lt =
-// export const gt =
-// export const lte = and(lt)
-// export const gte = and()
+export const lte = B1(not)(gt)
+export const gte = B1(not)(lt)
