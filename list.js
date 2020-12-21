@@ -1,6 +1,6 @@
 import { B, C, I } from './combinators'
-import { True, False, ifElse, eq } from './booleans'
-import { pred, n1 } from './numbers'
+import { True, False, ifElse } from './booleans'
+import { pred, n1, eq } from './numbers'
 import { makePair, fst, snd } from './pair'
 
 export const nil = makePair(True)(True)

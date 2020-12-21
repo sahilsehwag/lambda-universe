@@ -1,4 +1,4 @@
-import { K, KI, B1, C, M } from './combinators'
+import { K, KI, B1, C, M, I } from './combinators'
 
 export const True = K
 export const False = KI
@@ -15,3 +15,5 @@ export const beq = xnor
 
 export const imp = a => b => a(b)(not(a))
 export const cimp = a => b => b(a)(not(b))
+
+export const ifElse = I

@@ -4,7 +4,7 @@
 // 	                         REFERENCE(λ)
 // ======================================================================
 // I   = λa.a                   (idiot|ibis-combinator) [identity-combinator]
-// B   = λa.aa                  (mockingbird-combinator) [self-application-combinator]
+// M   = λa.aa                  (mockingbird-combinator) [self-application-combinator]
 // Y   = λa...                  (y-combinator) [recursion-combinator]
 // Z   = λa...                  (z-combinator) [recursion-combinator]
 // K   = λab.a                  (kestrel-combinator) [first-combinator][constant-combinator]
