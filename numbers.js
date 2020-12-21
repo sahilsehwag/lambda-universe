@@ -1,13 +1,14 @@
 import { B, K, B1 } from './combinators'
-import { pair, fst, phi } from './pairs'
+import { makePair, fst, phi } from './pairs'
 import { not, and } from './booleans'
+import { ifElseLazy } from './utilities'
 
 //numbers(church-numerals)
 export const n0 = f => a => a
 export const n1 = f => a => f(a)
 
 export const succ = n => f => a => f(n(f)(a))
-export const pred = n => fst(n(phi)(pair(n0)(n0)))
+export const pred = n => fst(n(phi)(makePair(n0)(n0)))
 export const is0 = n => n(K(False))(True)
 
 export const n2 = succ(n1)
@@ -27,9 +28,10 @@ export const mul = y => x => y(add(x))(n0)
 export const exp = y => x => y(mul(x))(n1)
 
 export const sub = y => x => y(pred)(x)
-// export const div = n => m => //TODO
-// export const log = n => m => //TODO
 
+// use Y-combinator #TODO
+const _div = r => y => x => ifElseLazy (isNot0(x)) (() => _div(succ(r))(y)(sub(y)(x))) (() => r)
+export const div = _div(n0)
 
 //arithematic-boolean-operations
 const isNot0 = B(not)(is0)
